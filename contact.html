@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — LancyHQ</title>
+  <meta name="description" content="Start a project, book a discovery call, or just ask a question. We respond within 1–2 business days." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav id="nav" class="scrolled">
+    <div class="nav-logo">LancyHQ<span class="nav-logo-dot"></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active nav-cta">Let's Talk</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page intro -->
+  <div class="page-intro">
+    <div class="page-intro-inner">
+      <div>
+        <div class="label"><span class="label-line"></span>Contact</div>
+        <h1>Let's build<br><em>something.</em></h1>
+      </div>
+      <p class="page-intro-desc">Tell us about your project. We'll review your message and respond within 1–2 business days to schedule a free discovery call.</p>
+    </div>
+  </div>
+
+  <!-- Contact body -->
+  <section class="section" style="background: var(--canvas);">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <h2>We'd love to<br>hear from <em>you.</em></h2>
+          <p>Whether you have a fully scoped project or just a vague idea — reach out. Honest advice is free, and we won't push you toward something you don't need.</p>
+
+          <div class="contact-detail">
+            <div class="cd-label">Email</div>
+            <div class="cd-value"><a href="mailto:hello@lancyhq.com">hello@lancyhq.com</a></div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="cd-label">Phone</div>
+            <div class="cd-value">513-293-3008</div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="cd-label">Based</div>
+            <div class="cd-value">Cincinnati, OH &nbsp;·&nbsp; Remote-First</div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="cd-label">Response</div>
+            <div class="cd-value">Within 1–2 business days</div>
+          </div>
+
+          <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--amber-pale); border: 1px solid rgba(212,130,10,0.18); border-left: 3px solid var(--amber); border-radius: 2px;">
+            <div style="font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.5rem;">Free Discovery Call</div>
+            <p style="font-size: 0.84rem; color: var(--ink-3); font-weight: 300; line-height: 1.65;">Every project starts with a free 30-minute call. No pitch, no pressure — just an honest conversation about what you need and whether we're the right fit.</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal">
+          <h3>Send a Message</h3>
+          <p class="form-sub">Fields marked * are required. We'll get back to you within 1–2 business days.</p>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE" />
+            <input type="hidden" name="redirect" value="thankyou.html" />
+            <input type="hidden" name="subject" value="New Inquiry — LancyHQ" />
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (000) 000-0000" />
+              </div>
+              <div class="field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your business name" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="interest">I'm interested in *</label>
+              <select id="interest" name="interest" required>
+                <option value="">— Select one —</option>
+                <option value="launchpad">Launchpad Package (up to 3 pages)</option>
+                <option value="presence">Presence Package (up to 6 pages)</option>
+                <option value="authority">Authority Package (up to 10 pages)</option>
+                <option value="enterprise">Enterprise / Custom Build</option>
+                <option value="engineering">Software / Backend Engineering</option>
+                <option value="consulting">Technical Consulting</option>
+                <option value="other">Not sure — help me figure it out</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="budget">Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="">— Select a range —</option>
+                <option value="under-1500">Under $1,500</option>
+                <option value="1500-3000">$1,500 – $3,000</option>
+                <option value="3000-6000">$3,000 – $6,000</option>
+                <option value="6000-12000">$6,000 – $12,000</option>
+                <option value="12000+">$12,000+</option>
+                <option value="unknown">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Tell us about your project *</label>
+              <textarea id="message" name="message" placeholder="What are you building? What problems are you trying to solve? The more detail, the better." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark" style="width: 100%; justify-content: center; padding: 1rem; font-size: 0.85rem;">
+              Send Message →
+            </button>
+            <p class="field-note">Your information is never shared with third parties.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">LancyHQ<span class="footer-logo-dot"></span></div>
+        <p>Full-stack web development and software engineering for small to mid-size businesses. Remote-first, based in Cincinnati, OH.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <ul>
+          <li><a href="services.html">Web Design &amp; Development</a></li>
+          <li><a href="services.html">Software Engineering</a></li>
+          <li><a href="services.html">Technical Consulting</a></li>
+          <li><a href="services.html">Custom Backends</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <ul>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <li><a href="mailto:hello@lancyhq.com">hello@lancyhq.com</a></li>
+          <li><span>513-293-3008</span></li>
+          <li><span>Cincinnati, OH</span></li>
+          <li><span>Remote-First</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LancyHQ. All Rights Reserved.</p>
+      <p>Remote-First &nbsp;·&nbsp; Cincinnati, OH</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 90); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
